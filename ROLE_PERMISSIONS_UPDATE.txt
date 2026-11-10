@@ -1,0 +1,21 @@
+ATTENDTRACK - ROLE PERMISSIONS UPDATE
+
+This folder keeps the original AttendTrack file structure and original application files.
+
+Changes in this update:
+1. Admin and HR attendance register is read-only. Status, check-in, check-out and note fields are displayed as text, not editable controls.
+2. The manual 'Mark unmarked as Absent' and 'Save changes' controls are hidden.
+3. Admin and HR cannot open the internal Check-in Kiosk page from the dashboard navigation. Employee check-in portal remains separate.
+4. HR cannot open Company Settings. Administrator can.
+5. Employee management, reports, dashboard, styles, database module, tests and original SQL files are retained.
+
+IMPORTANT LIMITATION:
+The current original app.py exposes an unauthenticated PUT /api/data endpoint that accepts a complete data payload. This means browser-side role restrictions alone are NOT sufficient security: a technically capable user could bypass the interface and call that endpoint directly. Do not deploy this build for real employee data until server-side authentication, company scoping and role authorization are implemented. This update is a UI-level permissions update for the current project, not a production-secure authorization system.
+
+The current original app also uses demo login credentials in static/script.js. Do not use those credentials in production.
+
+Run as before:
+  pip install -r requirements.txt   (if your project has this file)
+  python app.py
+
+No database tables or existing attendance records are modified by this update.

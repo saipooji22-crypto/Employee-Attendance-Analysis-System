@@ -1,0 +1,671 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AttendTrack · Employee Attendance System</title>
+  <!-- Relative path works both in Flask (/static/style.css) and when opened with VS Code Live Server -->
+  <link rel="stylesheet" href="../static/style.css">
+</head>
+<body class="locked">
+
+<!-- ================= WELCOME PAGE ================= -->
+<section class="welcome-screen" id="welcomeScreen">
+
+    <!-- Navigation -->
+    <header class="welcome-nav">
+
+        <a href="#home" class="welcome-brand">
+            <span class="welcome-brand-mark">AT</span>
+            <span>AttendTrack</span>
+        </a>
+
+        <nav class="welcome-nav-links">
+            <a href="#home">Home</a>
+            <a href="#welcomeFeatures">Features</a>
+            <a href="#welcomeAbout">About</a>
+
+            <button type="button" id="welcomeLoginBtn">
+                Login
+            </button>
+        </nav>
+
+    </header>
+
+
+    <!-- Hero -->
+    <section class="welcome-hero" id="home">
+
+        <div class="welcome-hero-content">
+
+            <span class="welcome-tag">
+                SMART EMPLOYEE ATTENDANCE MANAGEMENT
+            </span>
+
+            <h1>
+                Your Workforce.
+                <span>Better Organized.</span>
+                Every Day.
+            </h1>
+
+            <p>
+                Simplify employee attendance management with
+                AttendTrack. Record check-ins, monitor work
+                hours, manage employee information and
+                understand attendance through clear reports.
+            </p>
+
+            <div class="welcome-actions">
+
+                <button type="button" id="welcomeGetStarted"
+                        class="welcome-primary-btn">
+                    Get Started →
+                </button>
+
+                <a href="#welcomeFeatures"
+                   class="welcome-secondary-btn">
+                    Explore Features
+                </a>
+
+            </div>
+
+            <div class="welcome-trust">
+                Simple Management • Clear Reports • Better Tracking
+            </div>
+
+        </div>
+
+
+        <!-- Dashboard Preview -->
+        <div class="welcome-preview">
+
+            <div class="preview-window">
+
+                <div class="preview-heading">
+                    <div>
+                        <span class="preview-dot"></span>
+                        AttendTrack
+                    </div>
+                    <span class="preview-label">DASHBOARD PREVIEW</span>
+                </div>
+
+                <h3>Attendance Overview</h3>
+                <p class="preview-subtitle">
+                    A simple view of your workforce.
+                </p>
+
+                <div class="preview-cards">
+
+                    <div class="preview-card">
+                        <span>👥</span>
+                        <strong>Employees</strong>
+                        <small>Employee records</small>
+                    </div>
+
+                    <div class="preview-card">
+                        <span>🕒</span>
+                        <strong>Check-in</strong>
+                        <small>Daily attendance</small>
+                    </div>
+
+                    <div class="preview-card">
+                        <span>📊</span>
+                        <strong>Reports</strong>
+                        <small>Attendance analysis</small>
+                    </div>
+
+                    <div class="preview-card">
+                        <span>📅</span>
+                        <strong>Calendar</strong>
+                        <small>Attendance history</small>
+                    </div>
+
+                </div>
+
+                <div class="preview-bottom">
+                    <span>✓ Organized records</span>
+                    <span>✓ Easy monitoring</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Features -->
+    <section class="welcome-features" id="welcomeFeatures">
+
+        <div class="welcome-section-heading">
+            <span>OUR FEATURES</span>
+            <h2>Everything You Need in One Place</h2>
+            <p>
+                Manage employee attendance through one
+                organized and easy-to-use system.
+            </p>
+        </div>
+
+        <div class="welcome-feature-grid">
+
+            <div class="welcome-feature-card">
+                <div class="feature-icon">👥</div>
+                <h3>Employee Management</h3>
+                <p>
+                    Add, update, search and maintain
+                    employee information.
+                </p>
+            </div>
+
+            <div class="welcome-feature-card">
+                <div class="feature-icon">⏰</div>
+                <h3>Employee Check-in</h3>
+                <p>
+                    Allow employees to record their
+                    check-in and check-out times.
+                </p>
+            </div>
+
+            <div class="welcome-feature-card">
+                <div class="feature-icon">📋</div>
+                <h3>Attendance Register</h3>
+                <p>
+                    View and manage daily employee
+                    attendance records.
+                </p>
+            </div>
+
+            <div class="welcome-feature-card">
+                <div class="feature-icon">📈</div>
+                <h3>Reports & Analysis</h3>
+                <p>
+                    Review employee attendance
+                    summaries and attendance trends.
+                </p>
+            </div>
+
+            <div class="welcome-feature-card">
+                <div class="feature-icon">⚙️</div>
+                <h3>Shift Settings</h3>
+                <p>
+                    Configure company working hours,
+                    grace periods and working days.
+                </p>
+            </div>
+
+            <div class="welcome-feature-card">
+                <div class="feature-icon">🔔</div>
+                <h3>Late Attendance Tracking</h3>
+                <p>
+                    Monitor late arrivals and
+                    identify attendance irregularities.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- About -->
+    <section class="welcome-about" id="welcomeAbout">
+
+        <span>ABOUT ATTENDTRACK</span>
+
+        <h2>Make Attendance Management Easier.</h2>
+
+        <p>
+            AttendTrack is an employee attendance management
+            system designed to help organizations maintain
+            employee records, record daily attendance and
+            analyze attendance information.
+
+            It brings employee check-in, attendance
+            management and reporting together in one place.
+        </p>
+
+    </section>
+
+
+    <!-- Call to Action -->
+    <section class="welcome-cta">
+
+        <h2>Ready to Manage Attendance Smarter?</h2>
+
+        <p>
+            Access your AttendTrack account and get started.
+        </p>
+
+        <button type="button" id="welcomeBottomLogin">
+            Login to AttendTrack →
+        </button>
+        <button type="button" id="welcomeSignupBtn"
+        class="welcome-signup-btn">
+        Sign Up
+        </button>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="welcome-footer">
+
+        <div>
+            <strong>AttendTrack</strong>
+            <p>Employee Attendance Management System</p>
+        </div>
+
+        <span>© AttendTrack. All rights reserved.</span>
+
+    </footer>
+
+</section>
+<!-- ================= END WELCOME PAGE ================= -->
+<!-- ================= COMPANY SIGNUP ================= -->
+<section class="signup-screen" id="signupScreen" hidden>
+    <div class="signup-card">
+
+        <button type="button" id="signupBackBtn">
+            ← Back to Welcome
+        </button>
+
+        <div class="brand">
+            <span class="brand-mark">AT</span>
+            <span class="brand-name">AttendTrack</span>
+        </div>
+
+        <h2>Register Your Company</h2>
+        <p>Create your company's attendance management account.</p>
+
+        <form id="companySignupForm">
+
+            <h3>Company Details</h3>
+
+            <label>Company Name</label>
+            <input type="text" id="companyName"
+                   placeholder="Enter company name" required>
+
+            <label>Company Email</label>
+            <input type="email" id="companyEmail"
+                   placeholder="company@example.com" required>
+
+            <label>Company Contact Number</label>
+            <input type="tel" id="companyPhone"
+                   placeholder="Enter contact number" required>
+
+            <h3>HR Administrator Details</h3>
+
+            <label>HR Admin Name</label>
+            <input type="text" id="adminName"
+                   placeholder="Enter HR admin name" required>
+
+            <label>HR Admin Email</label>
+            <input type="email" id="adminEmail"
+                   placeholder="Enter HR admin email" required>
+
+            <label>Password</label>
+            <input type="password" id="adminPassword"
+                   placeholder="Create password" required>
+
+            <label>Confirm Password</label>
+            <input type="password" id="confirmPassword"
+                   placeholder="Confirm password" required>
+
+            <button type="submit" id="companySignupSubmit">
+                Create Company Account
+            </button>
+
+            <p id="signupMessage"></p>
+
+        </form>
+    </div>
+</section>
+<!-- ================= LOGIN ================= -->
+<div class="login-wrap" id="loginScreen" hidden>
+  <div class="login">
+    <button type="button" id="welcomeBackBtn" class="welcome-back-btn">
+    ← Back to Welcome
+</button>
+    <div class="brand"><span class="brand-mark">AT</span><span class="brand-name">AttendTrack</span></div>
+    <div class="login-tabs" role="tablist">
+      <button type="button" class="login-tab active" data-login-tab="employee" role="tab" aria-selected="true">Employee check-in</button>
+      <button type="button" class="login-tab" data-login-tab="admin" role="tab" aria-selected="false">Admin / HR</button>
+    </div>
+
+    <!-- Employee check-in login -->
+    <form class="form" id="empLoginForm" novalidate>
+      <div><h2>Check in or out</h2><p class="muted" style="margin:0">Sign in with your Employee ID and PIN</p></div>
+      <div class="form-row">
+        <label for="empLoginId">Employee ID</label>
+        <input id="empLoginId" name="empLoginId" type="text"
+       placeholder="E101" autocomplete="username" required
+       pattern="(?:[Ee][Mm][Pp]|[Ee])[0-9]{3,}"
+       data-msg="Enter your Employee ID, e.g. E101."
+       style="text-transform:uppercase">
+        <small class="field-error" data-error-for="empLoginId"></small>
+      </div>
+      <div class="form-row">
+        <label for="empLoginPin">PIN</label>
+        <input id="empLoginPin" name="empLoginPin" type="password" inputmode="numeric"  autocomplete="current-password"
+     required pattern="[0-9]{4}" maxlength="4" placeholder="••••" data-msg="PIN must be exactly 4 digits." >
+        <small class="field-error" data-error-for="empLoginPin"></small>
+      </div>
+      <small class="field-error" id="empLoginError"></small>
+      <button class="btn btn-success btn-lg" type="submit">Continue</button>
+    </form>
+
+    <!-- Admin / HR login -->
+    <form class="form" id="loginForm" novalidate hidden>
+      <div><h2>Admin sign in</h2><p class="muted" style="margin:0">Dashboard, register, reports and settings</p></div>
+      <div class="form-row">
+        <label for="loginEmail">Email</label>
+        <input id="loginEmail" type="email" name="loginEmail" autocomplete="username" required data-msg="Enter your work email.">
+        <small class="field-error" data-error-for="loginEmail"></small>
+      </div>
+      <div class="forgot-link-container">
+    <button type="button" id="forgotPasswordLink">
+        Forgot Password?
+    </button>
+    </div>
+      <div class="form-row">
+        <label for="loginPass">Password</label>
+        <input id="loginPass" type="password" name="loginPass" autocomplete="current-password" required minlength="6"
+               data-msg="Password must be at least 6 characters.">
+        <small class="field-error" data-error-for="loginPass"></small>
+      </div>
+      <small class="field-error" id="loginError"></small>
+      <button class="btn btn-primary btn-lg" type="submit">Sign in</button>
+    </form>
+    <!-- FORGOT PASSWORD SCREEN -->
+<div id="forgotPasswordPanel" hidden>
+
+    <h2>Forgot Password?</h2>
+    <p class="muted">
+        Enter your registered HR email address.
+        We'll send you a password reset link.
+    </p>
+
+    <form class="form" id="forgotPasswordForm">
+
+        <div class="form-row">
+            <label for="resetRequestEmail">Registered Email</label>
+            <input
+                type="email"
+                id="resetRequestEmail"
+                placeholder="Enter your HR email"
+                required>
+        </div>
+
+        <small id="forgotPasswordMessage"></small>
+
+        <button type="submit" class="btn btn-primary btn-lg">
+            Send Reset Link
+        </button>
+
+        <button type="button" id="backToLoginBtn" class="link-btn">
+            ← Back to Login
+        </button>
+
+    </form>
+</div>
+  </div>
+</div>
+
+<!-- ================= EMPLOYEE CHECK-IN PORTAL ================= -->
+<div class="portal-wrap" id="empPortal" hidden>
+  <div class="portal">
+    <div class="portal-top">
+      <div class="brand" style="padding:0"><span class="brand-mark">AT</span><span class="brand-name">AttendTrack</span></div>
+      <button type="button" class="btn btn-ghost btn-sm" id="portalSignOut">Sign out</button>
+    </div>
+    <div class="portal-clock"><div class="t" id="portalTime">--:--</div><div class="d" id="portalDate"></div></div>
+    <div class="portal-who">
+      <span class="avatar" id="portalAvatar">--</span>
+      <div><strong id="portalName"></strong><br><span class="muted small" id="portalMeta"></span></div>
+    </div>
+    <p class="muted small" id="portalShift" style="margin:0 0 10px"></p>
+    <div class="portal-status" id="portalStatus"></div>
+    <div class="kiosk-actions">
+      <button type="button" class="btn btn-success btn-lg" id="portalIn">Check in</button>
+      <button type="button" class="btn btn-dark btn-lg" id="portalOut">Check out</button>
+    </div>
+    <div class="portal-result" id="portalResult" role="status"></div>
+    <h3 class="sub-head">My last 7 working days</h3>
+    <div class="table-wrap" id="portalHistory"></div>
+    <div class="portal-foot">
+      <span class="muted small" id="portalCountdown"></span>
+      <button type="button" class="link-btn" id="portalStay">Stay signed in</button>
+    </div>
+  </div>
+</div>
+
+<!-- ================= APP SHELL ================= -->
+<aside class="sidebar" id="sidebar">
+  <div class="brand"><span class="brand-mark">AT</span><span class="brand-name">AttendTrack</span></div>
+  <nav class="nav">
+    <a href="#dashboard" class="nav-link" data-page="dashboard">
+      <svg viewBox="0 0 24 24"><path d="M3 13h8V3H3zm0 8h8v-6H3zm10 0h8V11h-8zm0-18v6h8V3z"/></svg>Dashboard</a>
+    <a href="#checkin" class="nav-link" data-page="checkin">
+      <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8zm.5-13H11v6l5.2 3.2.8-1.3-4.5-2.7z"/></svg>Check-in Kiosk</a>
+    <a href="#attendance" class="nav-link" data-page="attendance">
+      <svg viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 16H5V9h14zm-9.5-2.5L6 14l1.4-1.4 2.1 2.1 5.1-5.1L16 11z"/></svg>Attendance</a>
+    <a href="#employees" class="nav-link" data-page="employees">
+      <svg viewBox="0 0 24 24"><path d="M16 11a4 4 0 1 0-4-4 4 4 0 0 0 4 4zm-8 0a3 3 0 1 0-3-3 3 3 0 0 0 3 3zm0 2c-2.3 0-7 1.2-7 3.5V19h7v-2.5c0-.9.4-1.7 1-2.4A9 9 0 0 0 8 13zm8 0c-2.7 0-8 1.3-8 4v2h16v-2c0-2.7-5.3-4-8-4z"/></svg>Employees</a>
+    <a href="#reports" class="nav-link" data-page="reports">
+      <svg viewBox="0 0 24 24"><path d="M5 9.2h3V19H5zM10.6 5h2.8v14h-2.8zm5.6 8H19v6h-2.8z"/></svg>Reports</a>
+    <a href="#settings" class="nav-link" data-page="settings">
+      <svg viewBox="0 0 24 24"><path d="M19.4 13a7.5 7.5 0 0 0 0-2l2.1-1.6-2-3.5-2.5 1a7.3 7.3 0 0 0-1.7-1L15 3h-4l-.4 2.7a7.3 7.3 0 0 0-1.7 1l-2.5-1-2 3.5L6.6 11a7.5 7.5 0 0 0 0 2l-2.1 1.6 2 3.5 2.5-1a7.3 7.3 0 0 0 1.7 1L11 21h4l.4-2.7a7.3 7.3 0 0 0 1.7-1l2.5 1 2-3.5zM13 15.5A3.5 3.5 0 1 1 16.5 12 3.5 3.5 0 0 1 13 15.5z"/></svg>Settings</a>
+  </nav>
+  <div class="sidebar-user">
+    <span class="avatar" id="userAvatar">A</span>
+    <div class="who"><strong id="userName">Admin</strong><span id="userRole">Administrator</span></div>
+    <button class="logout" type="button" id="logoutBtn">Sign out</button>
+  </div>
+  <p class="sidebar-foot" id="companyFoot">Employee Attendance System</p>
+</aside>
+
+<div class="main">
+  <header class="topbar">
+    <div class="topbar-left">
+      <button class="menu-btn" type="button" aria-label="Toggle menu" id="menuBtn">☰</button>
+      <div><h1 class="page-title" id="pageTitle"></h1><p class="page-sub" id="pageSub"></p></div>
+    </div>
+    <div class="clock">
+      <div class="clock-time" id="clockTime">--:--:--</div>
+      <div class="clock-date" id="clockDate"></div>
+      <span class="shift-pill" id="shiftPill"></span>
+    </div>
+  </header>
+  <div class="flashes" id="flashes"></div>
+
+  <!-- DASHBOARD -->
+  <main class="content page" id="page-dashboard">
+    <div class="notice" id="dashNotice" hidden></div>
+    <section class="stats" id="dashStats"></section>
+    <section class="grid-3">
+      <div class="card">
+        <div class="card-head"><h2>Last 7 working days</h2></div>
+        <div class="trend" id="trend"></div>
+        <div class="legend"><span><i style="background:var(--present)"></i>On time</span><span><i style="background:#e3a54a"></i>Late</span><span><i style="background:#f1f3f7;border:1px solid var(--border)"></i>Absent / leave</span></div>
+      </div>
+      <div class="card">
+        <div class="card-head"><h2>Late today</h2><a class="link" href="#attendance">Register →</a></div>
+        <ul class="list" id="lateList"></ul>
+      </div>
+      <div class="card">
+        <div class="card-head"><h2>Not checked in</h2><a class="link" href="#checkin">Kiosk →</a></div>
+        <ul class="list" id="missingList"></ul>
+      </div>
+    </section>
+    <section class="grid-2">
+      <div class="card">
+        <div class="card-head"><h2>Today by department</h2></div>
+        <ul class="dept-list" id="deptList"></ul>
+      </div>
+      <div class="card">
+        <div class="card-head"><h2>Live activity</h2></div>
+        <div id="activity"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- CHECK-IN KIOSK -->
+  <main class="content page" id="page-checkin">
+    <section class="kiosk">
+      <div class="card">
+        <div class="kiosk-clock"><div class="t" id="kioskTime">--:--:--</div><div class="d" id="kioskDate"></div></div>
+        <form id="kioskForm" class="form" novalidate>
+          <div class="form-row">
+            <label for="kioskId">Employee ID</label>
+            <input id="kioskId" name="kioskId" type="text" placeholder="Type or pick, e.g. E101" list="empIds" autocomplete="off">
+            <datalist id="empIds"></datalist>
+            <small class="field-error" data-error-for="kioskId"></small>
+          </div>
+          <div class="kiosk-card" id="kioskCard"></div>
+          <div class="kiosk-actions">
+            <button type="button" class="btn btn-success btn-lg" id="btnIn" disabled>Check in</button>
+            <button type="button" class="btn btn-dark btn-lg" id="btnOut" disabled>Check out</button>
+          </div>
+        </form>
+      </div>
+      <div class="card">
+        <div class="card-head"><h2>Today's log <span class="count" id="logCount">0</span></h2></div>
+        <div id="kioskLog"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ATTENDANCE REGISTER -->
+  <main class="content page" id="page-attendance">
+    <div class="card">
+      <div class="card-head">
+        <h2 id="regTitle">Attendance register</h2>
+        <div class="inline-form">
+          <button type="button" class="btn btn-ghost btn-sm" id="regPrev" aria-label="Previous day">‹</button>
+          <input id="regDate" type="date" aria-label="Date">
+          <button type="button" class="btn btn-ghost btn-sm" id="regNext" aria-label="Next day">›</button>
+          <button type="button" class="btn btn-ghost btn-sm" id="regToday">Today</button>
+        </div>
+      </div>
+      <div class="notice" id="regNotice" hidden style="margin-bottom:14px"></div>
+      <div class="summary-bar" id="regSummary"></div>
+      <form id="regForm" novalidate>
+        <div class="toolbar" id="regTools">
+          <span class="muted">Bulk:</span>
+          <button type="button" class="chip chip-absent" id="markRestAbsent">Mark unmarked as Absent</button>
+          <input type="search" id="regSearch" placeholder="Filter employees" style="max-width:220px;margin-left:auto">
+        </div>
+        <div id="regTable"></div>
+        <div class="form-actions">
+          <small class="field-error" id="regError"></small>
+          <span class="muted small" id="regDirty"></span>
+          <button type="submit" class="btn btn-primary" id="regSave">Save changes</button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <!-- EMPLOYEES -->
+  <main class="content page" id="page-employees">
+    <div class="card">
+      <div class="card-head">
+        <h2>Employees <span class="count" id="empCount">0</span></h2>
+        <button class="btn btn-primary" type="button" id="addEmpBtn">+ Add employee</button>
+      </div>
+      <div class="filters">
+        <input type="search" id="empSearch" placeholder="Search name, ID or email" aria-label="Search">
+        <select id="empDeptFilter" aria-label="Filter by department"></select>
+        <select id="empStatusFilter" aria-label="Filter by status">
+          <option value="active">Active</option><option value="inactive">Inactive</option><option value="">All</option>
+        </select>
+      </div>
+      <div id="empTable"></div>
+    </div>
+  </main>
+
+  <!-- REPORTS -->
+  <main class="content page" id="page-reports">
+    <div class="card">
+      <form class="filters" id="repFilters" style="align-items:flex-end">
+        <label>From<input type="date" id="repFrom"></label>
+        <label>To<input type="date" id="repTo"></label>
+        <label>Department<select id="repDept"></select></label>
+        <label>Quick range
+          <select id="repQuick">
+            <option value="">Custom</option><option value="month" selected>This month</option>
+            <option value="last30">Last 30 days</option><option value="week">This week</option>
+          </select>
+        </label>
+        <div class="grow"></div>
+        <button type="button" class="btn btn-ghost" id="exportSummary">Export summary CSV</button>
+        <button type="button" class="btn btn-primary" id="exportDetail">Export daily log CSV</button>
+      </form>
+      <small class="field-error" id="repError"></small>
+    </div>
+    <section class="stats" id="repStats" style="grid-template-columns:repeat(5,1fr)"></section>
+    <div class="card">
+      <div class="card-head"><h2>Employee summary</h2><span class="muted small">Click a name for the monthly calendar</span></div>
+      <div id="repTable"></div>
+    </div>
+  </main>
+
+  <!-- SETTINGS -->
+  <main class="content page" id="page-settings">
+    <section class="settings-grid">
+      <div class="card">
+        <div class="card-head"><h2>Shift &amp; policy</h2></div>
+        <form id="setForm" class="form" novalidate>
+          <div class="form-row">
+            <label for="setCompany">Company name</label>
+            <input id="setCompany" name="setCompany" type="text" required minlength="2" data-msg="Enter a company name.">
+            <small class="field-error" data-error-for="setCompany"></small>
+          </div>
+          <div class="form-split">
+            <div class="form-row">
+              <label for="setStart">Shift start</label>
+              <input id="setStart" name="setStart" type="time" required data-msg="Required.">
+              <small class="field-error" data-error-for="setStart"></small>
+            </div>
+            <div class="form-row">
+              <label for="setEnd">Shift end</label>
+              <input id="setEnd" name="setEnd" type="time" required data-msg="Must be after shift start.">
+              <small class="field-error" data-error-for="setEnd"></small>
+            </div>
+          </div>
+          <div class="form-split">
+            <div class="form-row">
+              <label for="setGrace">Grace period (minutes)</label>
+              <input id="setGrace" name="setGrace" type="number" min="0" max="120" required data-msg="0–120 minutes.">
+              <small class="field-error" data-error-for="setGrace"></small>
+            </div>
+            <div class="form-row">
+              <label for="setHalf">Min. hours for full day</label>
+              <input id="setHalf" name="setHalf" type="number" min="1" max="12" step="0.5" required data-msg="1–12 hours.">
+              <small class="field-error" data-error-for="setHalf"></small>
+            </div>
+          </div>
+          <div class="form-row">
+            <label>Working days</label>
+            <div class="seg" id="setDays"></div>
+          </div>
+          <div class="form-actions"><button class="btn btn-primary" type="submit">Save settings</button></div>
+        </form>
+      </div>
+      <div class="card">
+        <div class="card-head"><h2>Data</h2></div>
+        <p class="muted" style="margin-top:0">Records are saved in this browser. Download a backup before clearing browser data.</p>
+        <div class="actions" style="justify-content:flex-start;flex-wrap:wrap">
+          <button class="btn btn-ghost" type="button" id="backupBtn">Download backup (JSON)</button>
+          <label class="btn btn-ghost" style="margin:0">Restore backup<input type="file" id="restoreInput" accept="application/json" hidden></label>
+          <button class="btn btn-danger" type="button" id="resetBtn">Reset to sample data</button>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+
+<!-- MODAL HOST -->
+<div id="modalHost"></div>
+
+<script src="../static/script.js"></script>
+</body>
+</html>
